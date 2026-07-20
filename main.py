@@ -8,7 +8,7 @@ Super Doctor Bot / Бот Super Doctor
 - Statistika bo'limi
 - UZ / RU til qo'llab-quvvatlash
 - Kutubxona: aiogram 3.x
-- AI: Anthropic Claude API
+- AI: OPENAI_API_KEY
 
 O'RNATISH:
     pip install -r requirements.txt
