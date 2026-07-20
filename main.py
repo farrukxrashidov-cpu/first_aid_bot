@@ -46,6 +46,8 @@ load_dotenv()
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 BOT_NAME = "Super Doctor"
+ADMIN_ID = os.getenv("ADMIN_ID")
+ADMIN_ID = int(ADMIN_ID) if ADMIN_ID else None
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -138,20 +140,21 @@ def lang_keyboard() -> InlineKeyboardMarkup:
     )
 
 
-def main_reply_keyboard(lang: str) -> ReplyKeyboardMarkup:
-    return ReplyKeyboardMarkup(
-        keyboard=[
-            [KeyboardButton(text=TEXTS["menu_button"][lang])],
-            [KeyboardButton(text=TEXTS["diseases_button"][lang])],
-            [KeyboardButton(text=TEXTS["hospital_button"][lang], request_location=True)],
-            [
-                KeyboardButton(text=TEXTS["emergency_button"][lang]),
-                KeyboardButton(text=TEXTS["stats_button"][lang]),
-            ],
-            [KeyboardButton(text=TEXTS["lang_button"][lang])],
-        ],
-        resize_keyboard=True,
-    )
+def main_reply_keyboard(lang: str, is_admin: bool = False) -> ReplyKeyboardMarkup:
+    keyboard = [
+        [KeyboardButton(text=TEXTS["menu_button"][lang])],
+        [KeyboardButton(text=TEXTS["diseases_button"][lang])],
+        [KeyboardButton(text=TEXTS["hospital_button"][lang], request_location=True)],
+    ]
+    if is_admin:
+        keyboard.append([
+            KeyboardButton(text=TEXTS["emergency_button"][lang]),
+            KeyboardButton(text=TEXTS["stats_button"][lang]),
+        ])
+    else:
+        keyboard.append([KeyboardButton(text=TEXTS["emergency_button"][lang])])
+    keyboard.append([KeyboardButton(text=TEXTS["lang_button"][lang])])
+    return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
 
 
 def conditions_keyboard(lang: str) -> InlineKeyboardMarkup:
@@ -252,7 +255,8 @@ async def set_language(callback: CallbackQuery, state: FSMContext):
     await state.set_state(UserState.main_menu)
     await callback.message.edit_text(TEXTS["welcome"][lang], parse_mode="Markdown")
     await callback.message.answer(
-        TEXTS["choose_condition"][lang], reply_markup=main_reply_keyboard(lang)
+        TEXTS["choose_condition"][lang],
+        reply_markup=main_reply_keyboard(lang, is_admin=(callback.from_user.id == ADMIN_ID)),
     )
     await callback.answer()
 
@@ -325,9 +329,22 @@ async def show_emergency(message: Message):
     await message.answer(EMERGENCY_INFO[lang], parse_mode="Markdown")
 
 
+@router.message(Command("id"))
+async def show_my_id(message: Message):
+    await message.answer(f"🆔 Sizning Telegram ID: `{message.from_user.id}`", parse_mode="Markdown")
+
+
 @router.message(F.text.in_([TEXTS["stats_button"]["uz"], TEXTS["stats_button"]["ru"]]))
 async def show_stats(message: Message):
     lang = get_lang(message.from_user.id)
+
+    if ADMIN_ID is None or message.from_user.id != ADMIN_ID:
+        denied = {
+            "uz": "⛔ Bu bo'lim faqat admin uchun.",
+            "ru": "⛔ Этот раздел только для администратора.",
+        }
+        await message.answer(denied[lang])
+        return
 
     top_diseases = sorted(stats["disease_queries"].items(), key=lambda x: x[1], reverse=True)[:5]
     top_text_lines = []
