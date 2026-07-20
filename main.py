@@ -18,7 +18,7 @@ ISHGA TUSHIRISH:
 import asyncio
 import logging
 import os
-
+import psycopg2
 from aiogram import Bot, Dispatcher, F, Router
 from aiogram.filters import CommandStart, Command
 from aiogram.types import (
@@ -40,7 +40,8 @@ from ai_helper import ask_ai
 load_dotenv()
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-
+DATABASE_URL = os.getenv("DATABASE_URL")
+ADMIN_ID = 8757426539
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
