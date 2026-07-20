@@ -398,3 +398,4 @@ DISEASE_LIST = [
     {"key": "pericarditis", "uz": "Perikardit", "ru": "Перикардит"},
     {"key": "asthma_attack", "uz": "Bronxial astma xuruji", "ru": "Приступ бронхиальной астмы"},
     {"key": "allergic_dermatitis", "uz": "Allergik dermatit", "ru": "Аллергический дерматит"},
+]
