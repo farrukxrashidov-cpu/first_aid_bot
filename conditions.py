@@ -294,3 +294,200 @@ EMERGENCY_INFO = {
     "uz": "🚑 Tez yordam: *103*\n🚒 Yong'in: *101*\n👮 Politsiya: *102*",
     "ru": "🚑 Скорая помощь: *103*\n🚒 Пожарная: *101*\n👮 Полиция: *102*",
 }
+"heart_attack": {
+        "title": {"uz": "❤️‍🩹 Yurak xuruji belgilari", "ru": "❤️‍🩹 Признаки сердечного приступа"},
+        "text": {
+            "uz": (
+                "❤️‍🩹 *Yurak xurujida birinchi yordam:*\n\n"
+                "1. Darhol 103 ga qo'ng'iroq qiling.\n"
+                "2. Kishini qulay o'tirg'izing, tor kiyimlarini bo'shating.\n"
+                "3. Agar shifokor tomonidan buyurilgan bo'lsa, aspirin chaynatib berish mumkin (allergiyasi yo'qligiga ishonch hosil qiling).\n"
+                "4. Kishini yolg'iz qoldirMang, holatini kuzatib turing.\n"
+                "5. Hushidan ketsa va nafas olmasa — yurak-o'pka reanimatsiyasini (CPR) boshlang.\n\n"
+                "⚠️ Belgilari: ko'krakda og'riq/bosim, chap qo'l/jag'ga tarqalish, nafas qisilishi, sovuq ter."
+            ),
+            "ru": (
+                "❤️‍🩹 *Первая помощь при сердечном приступе:*\n\n"
+                "1. Немедленно звоните 103.\n"
+                "2. Усадите человека в удобное положение, ослабьте тесную одежду.\n"
+                "3. Если назначено врачом, можно дать разжевать аспирин (убедитесь в отсутствии аллергии).\n"
+                "4. Не оставляйте человека одного, следите за состоянием.\n"
+                "5. Если потерял сознание и не дышит — начните СЛР (сердечно-лёгочную реанимацию).\n\n"
+                "⚠️ Симптомы: боль/давление в груди, отдающая в руку/челюсть, одышка, холодный пот."
+            ),
+        },
+    },
+    "fainting": {
+        "title": {"uz": "😵 Hushidan ketish", "ru": "😵 Обморок"},
+        "text": {
+            "uz": (
+                "😵 *Hushidan ketishda birinchi yordam:*\n\n"
+                "1. Kishini yerga yotqizing, oyoqlarini biroz ko'tarib qo'ying.\n"
+                "2. Tor kiyimlarini bo'shating, havo yetkazing.\n"
+                "3. Hushiga kelgach, sekin-asta o'tirgizib, suv bering.\n"
+                "4. 1-2 daqiqada hushiga kelmasa yoki qayta-qayta yuz bersa — 103 ga qo'ng'iroq qiling.\n\n"
+                "⚠️ Kishini darhol tik turg'izMang — qayta yiqilishi mumkin."
+            ),
+            "ru": (
+                "😵 *Первая помощь при обмороке:*\n\n"
+                "1. Уложите человека, слегка приподняв ноги.\n"
+                "2. Ослабьте тесную одежду, обеспечьте приток воздуха.\n"
+                "3. Когда придёт в сознание, медленно усадите и дайте воды.\n"
+                "4. Если не приходит в себя 1-2 минуты или обмороки повторяются — звоните 103.\n\n"
+                "⚠️ Не поднимайте человека сразу на ноги — возможен повторный обморок."
+            ),
+        },
+    },
+    "poisoning": {
+        "title": {"uz": "☠️ Zaharlanish", "ru": "☠️ Отравление"},
+        "text": {
+            "uz": (
+                "☠️ *Zaharlanishda birinchi yordam:*\n\n"
+                "1. Darhol 103 ga qo'ng'iroq qiling, nima yeb/ichib qo'yganini ayting.\n"
+                "2. Qusdirishga o'zingiz urinMang — ba'zi moddalarda bu zararli.\n"
+                "3. Kishi hushida bo'lsa, og'zini suv bilan chayqating.\n"
+                "4. Zaharning qutisi/idishi bo'lsa, tez yordamga ko'rsatish uchun saqlang.\n"
+                "5. Hushsiz bo'lsa, uni yon tomoniga yotqizing (qusuq nafas yo'liga tushmasligi uchun).\n\n"
+                "⚠️ Toksikologiya markazi yoki 103 bilan albatta bog'laning."
+            ),
+            "ru": (
+                "☠️ *Первая помощь при отравлении:*\n\n"
+                "1. Немедленно звоните 103, сообщите, что именно съел/выпил человек.\n"
+                "2. Не вызывайте рвоту самостоятельно — при некоторых веществах это опасно.\n"
+                "3. Если человек в сознании, прополощите ему рот водой.\n"
+                "4. Сохраните упаковку/ёмкость вещества для скорой помощи.\n"
+                "5. Если без сознания — положите на бок (чтобы рвотные массы не попали в дыхательные пути).\n\n"
+                "⚠️ Обязательно свяжитесь с токсикологическим центром или 103."
+            ),
+        },
+    },
+    "heatstroke": {
+        "title": {"uz": "☀️ Issiqlik urishi", "ru": "☀️ Тепловой удар"},
+        "text": {
+            "uz": (
+                "☀️ *Issiqlik urishida birinchi yordam:*\n\n"
+                "1. Kishini soyaga yoki salqin joyga olib o'ting.\n"
+                "2. Ortiqcha kiyimlarini yeching.\n"
+                "3. Tanasini nam sochiq bilan sovuting yoki muxlodor suv purkang.\n"
+                "4. Hushida bo'lsa, kichik-kichik yutumlarda suv bering.\n"
+                "5. Hushidan ketsa, isitmasi tushmasa yoki qusish bo'lsa — darhol 103 ga qo'ng'iroq qiling.\n\n"
+                "⚠️ Sovuq suvga to'liq botirMang — bu shokka olib kelishi mumkin."
+            ),
+            "ru": (
+                "☀️ *Первая помощь при тепловом ударе:*\n\n"
+                "1. Переместите человека в тень или прохладное место.\n"
+                "2. Снимите лишнюю одежду.\n"
+                "3. Охлаждайте тело влажным полотенцем или прохладной водой.\n"
+                "4. Если в сознании — давайте пить воду небольшими глотками.\n"
+                "5. Если без сознания, температура не снижается или рвота — немедленно звоните 103.\n\n"
+                "⚠️ Не погружайте полностью в холодную воду — это может вызвать шок."
+            ),
+        },
+    },
+"seizure": {
+        "title": {"uz": "⚡ Talvasa (epilepsiya xuruji)", "ru": "⚡ Судороги (приступ эпилепсии)"},
+        "text": {
+            "uz": (
+                "⚡ *Talvasa xurujida birinchi yordam:*\n\n"
+                "1. Atrofdagi qattiq/o'tkir narsalarni chetga suring.\n"
+                "2. Boshi ostiga yumshoq narsa qo'ying.\n"
+                "3. Kishini ushlab turishga yoki harakatini to'xtatishga urinMang.\n"
+                "4. Og'ziga hech narsa tiqMang.\n"
+                "5. Xuruj tugagach, uni yon tomonga o'giring.\n"
+                "6. Xuruj 5 daqiqadan uzoq davom etsa yoki takrorlansa — 103 ga qo'ng'iroq qiling.\n\n"
+                "⚠️ Vaqtni belgilab qo'ying — shifokorlarga foydali bo'ladi."
+            ),
+            "ru": (
+                "⚡ *Первая помощь при судорогах (эпилепсии):*\n\n"
+                "1. Уберите вокруг твёрдые/острые предметы.\n"
+                "2. Подложите под голову что-то мягкое.\n"
+                "3. Не пытайтесь удерживать человека или останавливать движения.\n"
+                "4. Не вставляйте ничего в рот.\n"
+                "5. После приступа положите человека на бок.\n"
+                "6. Если приступ длится дольше 5 минут или повторяется — звоните 103.\n\n"
+                "⚠️ Засеките время приступа — это пригодится врачам."
+            ),
+        },
+    },
+    "electric_shock": {
+        "title": {"uz": "⚡️ Elektr toki urishi", "ru": "⚡️ Поражение электрическим током"},
+        "text": {
+            "uz": (
+                "⚡️ *Elektr toki urganda birinchi yordam:*\n\n"
+                "1. Avval o'zingizni himoya qiling — manbani o'chiring yoki quruq, o'tkazmaydigan narsa (yog'och tayoq) bilan itaring.\n"
+                "2. Qo'l bilan to'g'ridan-to'g'ri teginMang.\n"
+                "3. Xavfsiz bo'lgach, nafas va yurak urishini tekshiring.\n"
+                "4. Nafas olmasa — CPR boshlang.\n"
+                "5. Kuygan joylar bo'lsa, kuyish bo'yicha yordam bering.\n\n"
+                "⚠️ Doim 103 ga qo'ng'iroq qiling — ichki jarohatlar tashqi ko'rinmasligi mumkin."
+            ),
+            "ru": (
+                "⚡️ *Первая помощь при поражении током:*\n\n"
+                "1. Сначала обеспечьте свою безопасность — отключите источник или оттолкните сухим непроводящим предметом (деревянной палкой).\n"
+                "2. Не прикасайтесь к человеку голыми руками.\n"
+                "3. Когда безопасно, проверьте дыхание и пульс.\n"
+                "4. Если не дышит — начните СЛР.\n"
+                "5. При ожогах окажите соответствующую помощь.\n\n"
+                "⚠️ Всегда звоните 103 — внутренние повреждения могут быть незаметны снаружи."
+            ),
+        },
+    },
+    "allergy": {
+        "title": {"uz": "🤧 Kuchli allergiya (anafilaksiya)", "ru": "🤧 Тяжёлая аллергия (анафилаксия)"},
+        "text": {
+            "uz": (
+                "🤧 *Kuchli allergik reaksiyada birinchi yordam:*\n\n"
+                "1. Darhol 103 ga qo'ng'iroq qiling.\n"
+                "2. Agar shaxsiy EpiPen (adrenalin) bo'lsa, undan foydalanishga yordam bering.\n"
+                "3. Kishini yotqizib, oyoqlarini ko'taring (nafas qisilishi bo'lmasa).\n"
+                "4. Nafas olishga qiynalsa, o'tirgan holatda ushlang.\n"
+                "5. Hushidan ketsa va nafas olmasa — CPR boshlang.\n\n"
+                "⚠️ Belgilari: yuz/tomoq shishishi, nafas qisilishi, terida toshma, bosim keskin pasayishi."
+            ),
+            "ru": (
+                "🤧 *Первая помощь при тяжёлой аллергии (анафилаксии):*\n\n"
+                "1. Немедленно звоните 103.\n"
+                "2. Если есть личный EpiPen (адреналин), помогите его использовать.\n"
+                "3. Уложите человека, приподняв ноги (если нет затруднения дыхания).\n"
+                "4. При затруднённом дыхании — держите в сидячем положении.\n"
+                "5. Если без сознания и не дышит — начните СЛР.\n\n"
+                "⚠️ Симптомы: отёк лица/горла, одышка, сыпь, резкое падение давления."
+            ),
+        },
+    },
+    "stroke": {
+        "title": {"uz": "🧠 Insult belgilari", "ru": "🧠 Признаки инсульта"},
+        "text": {
+            "uz": (
+                "🧠 *Insultda birinchi yordam (FAST usuli):*\n\n"
+                "F — Face (Yuz): bir tomoni osilib qolganmi?\n"
+                "A — Arms (Qo'llar): bir qo'lini ko'tarolmayaptimi?\n"
+                "S — Speech (Nutq): so'zlari noaniq yoki tushunarsizmi?\n"
+                "T — Time (Vaqt): belgilar bo'lsa, DARHOL 103 ga qo'ng'iroq qiling!\n\n"
+                "Qo'shimcha:\n"
+                "1. Kishini qulay joylashtiring, boshini biroz ko'taring.\n"
+                "2. Ovqat yoki suv berMang (yutish qiyin bo'lishi mumkin).\n"
+                "3. Belgilar boshlangan vaqtni eslab qoling — bu davolashda muhim.\n\n"
+                "⚠️ Har daqiqa muhim — kechiktirmang."
+            ),
+            "ru": (
+                "🧠 *Первая помощь при инсульте (метод FAST):*\n\n"
+                "F — Face (Лицо): не опущена ли одна сторона?\n"
+                "A — Arms (Руки): может ли поднять обе руки?\n"
+                "S — Speech (Речь): не смазана ли, понятна ли?\n"
+                "T — Time (Время): при любом признаке — НЕМЕДЛЕННО звоните 103!\n\n"
+                "Дополнительно:\n"
+                "1. Уложите человека удобно, слегка приподняв голову.\n"
+                "2. Не давайте есть или пить (может быть трудно глотать).\n"
+                "3. Запомните время начала симптомов — это важно для лечения.\n\n"
+                "⚠️ Каждая минута важна — не откладывайте."
+            ),
+        },
+    },
+}
+
+# Emergency numbers (Uzbekistan)
+EMERGENCY_INFO = {
+    "uz": "🚑 Tez yordam: *103*\n🚒 Yong'in: *101*\n👮 Politsiya: *102*",
+    "ru": "🚑 Скорая помощь: *103*\n🚒 Пожарная: *101*\n👮 Полиция: *102*",
+}
